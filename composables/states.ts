@@ -1,0 +1,1 @@
+export const useCurrentPage = () => useState<string>('current', () => 'home');
