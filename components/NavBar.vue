@@ -1,6 +1,7 @@
 <template>
   <div>
-    <header class="bg-primary-700 shadow-lg h-24 hidden md:flex">
+    <h1>Only Home, Our Rooms, and The room links work</h1>
+    <header class="bg-primary-900 shadow-lg h-24 hidden md:flex">
       <a
         href=""
         class="border flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8"

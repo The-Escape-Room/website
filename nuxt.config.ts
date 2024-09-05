@@ -1,3 +1,5 @@
+import { vuetifyConfiguration } from "virtual:vuetify-configuration";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -15,7 +17,7 @@ export default defineNuxtConfig({
   nitro: {
     plugins: ['~/server/plugins/mongodb.ts'],
   },
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "vuetify-nuxt-module"],
   runtimeConfig: {
     mongodbUri: '',
   },

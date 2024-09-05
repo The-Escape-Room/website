@@ -1,34 +1,20 @@
 <template>
   <div>
-    <h1>Welcome to the homepage</h1>
 
-    <div id="rooms">
-      <div class="bg-white">
-        <div class="mx-auto mx-w-2xl px-4 py-16 sm:px-6 lg:max-w-7zl lg:px-7">
-          <h2 class="text-2xl font-bold-tracking-tight text-gray-900">Our Rooms</h2>
-          <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div class="group relative">
-              <div v-for="room in rooms.data.value" >
-                <div class="aspect-h-1 aspect-w-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                  <img :src="room.images[0]" alt="" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
-                  <div class="relative p-5">
-                    <div class="mt-400">
-                      <div class="transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
-                        <div class="p-2">
-                          <h2>{{room.name}}</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center mt-12">
-                </div>
-              </div>
-            </div>
-          </div>
+    <SlideShow />
+    <v-card>
+      <v-card-title>Some Text Right here</v-card-title>
+    </v-card>
+    <div class="bg-secondary-200 border rounded-lg">
+      <h1 class="mt-6 text-xl text-center pb-3">Some of our Rooms</h1>
+      <h1 class="text-center">Prettify This area to make it more interesting than it being a bland color</h1>
+      <div class="grid xl:grid-cols-4 xl:gap-2 md:grid-cols-2 md:gap-2 pl-10">
+        <div v-for="room in rooms.data.value" class="">
+          <RoomCard :room="room" class=""/>
         </div>
       </div>
     </div>
+    <v-footer>Footer Here</v-footer>
   </div>
 </template>
 

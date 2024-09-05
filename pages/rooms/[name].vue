@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        {{ room.name }}
     </div>
 </template>
 <script setup lang="ts">
