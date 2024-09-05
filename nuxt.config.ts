@@ -21,4 +21,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     mongodbUri: '',
   },
+  vuetify: {
+    vuetifyOptions: './vuetify.config.ts'
+  },
 });

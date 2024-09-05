@@ -4,6 +4,7 @@
       show-arrows="hover"
       cycle
       hide-delimiter-background
+      color="dark"
     >
     <div v-for="image in images">
       <v-carousel-item :src="image" cover></v-carousel-item>

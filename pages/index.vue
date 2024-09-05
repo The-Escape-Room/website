@@ -2,17 +2,39 @@
   <div>
 
     <SlideShow />
-    <v-card>
+    <v-card class="text-center">
       <v-card-title>Some Text Right here</v-card-title>
     </v-card>
-    <div class="bg-secondary-200 border rounded-lg">
-      <h1 class="mt-6 text-xl text-center pb-3">Some of our Rooms</h1>
-      <h1 class="text-center">Prettify This area to make it more interesting than it being a bland color</h1>
-      <div class="grid xl:grid-cols-4 xl:gap-2 md:grid-cols-2 md:gap-2 pl-10">
-        <div v-for="room in rooms.data.value" class="">
-          <RoomCard :room="room" class=""/>
-        </div>
-      </div>
+    <HomeRooms :rooms="rooms.data.value"/>
+    <v-card>
+      <v-card-title>
+        This section will not be on the website.
+      </v-card-title>
+      <v-card-subtitle>
+        This is just for progress of the website
+      </v-card-subtitle>
+    </v-card>
+    <div>
+      <v-alert variant="tonal" type="info" title="Colors">
+        Plan on having a more defined Color Scheme. Currently using a good variants of Eggplant Purple.
+        However the Goldenrod Yellow only looks good on the lighter scale. Will need to lighten up the darker side to get more yellow than brown/red
+      </v-alert>
+      <v-alert variant="tonal" type="success" title="Navbar" text="Improved the navbar to behave correctly on all sizes of devices!"></v-alert>
+      <v-alert variant="tonal" type="warning" title="Navbar Links" text="Only the Home, Our Rooms and The rooms links work"></v-alert>
+      <v-alert variant="tonal" type="success" title="Home Page Room Cards">
+        Improved the cards to have more interaction when hovering over the cards.
+        <br>
+        Also made the grid to respect device sizing
+      </v-alert>
+      <v-alert variant="tonal" type="error" title="Event Page">
+        Have not started yet!
+      </v-alert>
+      <v-alert variant="tonal" type="error" title="Contact Page">
+        Have not started yet!
+      </v-alert>
+      <v-alert variant="tonal" type="error" title="Scheduling Page">
+        This will probably direct to a third party site to handle booking
+      </v-alert>
     </div>
     <v-footer>Footer Here</v-footer>
   </div>
