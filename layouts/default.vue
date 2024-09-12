@@ -1,10 +1,14 @@
 <template>
   <div>
-    <NavBar />
+    <Navbar></Navbar>
     <slot />
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
 
-<style></style>
+</script>
+
+<style>
+
+</style>

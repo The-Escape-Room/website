@@ -5,7 +5,7 @@
     <v-card class="text-center">
       <v-card-title>Some Text Right here</v-card-title>
     </v-card>
-    <HomeRooms :rooms="rooms.data.value"/>
+    <HomeRoomCards :rooms="rooms.data.value"/>
     <v-card>
       <v-card-title>
         This section will not be on the website.

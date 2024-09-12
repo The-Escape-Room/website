@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="primary">
+  <v-app-bar color="primary-darken-4">
     <template v-slot:prepend v-if="$vuetify.display.smAndDown">
       <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
@@ -17,7 +17,7 @@
   <v-navigation-drawer
   v-model="drawer"
   temporary
-  color="primary">
+  color="primary-darken-3">
   <v-list v-for="route in routes">
     <v-list-item>
       <v-btn variant="text" color="secondary" :to="route.route">{{ route.title }}</v-btn>
