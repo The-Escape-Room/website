@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="primary-darken-4">
+  <v-app-bar color="primary-darken-4" :elevation="2" class="absolute">
     <template v-slot:prepend v-if="$vuetify.display.smAndDown">
       <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </template>
@@ -14,6 +14,9 @@
     <v-divider vertical></v-divider>
     <v-btn>Schedule</v-btn>
   </v-app-bar>
+  <br>
+  <br>
+  <br>
   <v-navigation-drawer
   v-model="drawer"
   temporary

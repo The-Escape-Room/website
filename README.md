@@ -2,6 +2,11 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+# Start Command
+```bash
+export $(grep -v '^#' .env | xargs) && node .output/server/index.mjs
+```
+
 ## Setup
 
 Make sure to install the dependencies:

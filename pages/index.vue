@@ -1,10 +1,6 @@
 <template>
   <div>
-
     <SlideShow />
-    <v-card class="text-center">
-      <v-card-title>Some Text Right here</v-card-title>
-    </v-card>
     <HomeRoomCards :rooms="rooms.data.value"/>
     <v-card>
       <v-card-title>

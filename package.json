@@ -16,6 +16,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "flowbite": "^2.5.1",
+    "lite-youtube-embed": "^0.3.3",
     "mobile-detect": "^1.4.5",
     "mongoose": "^8.6.0",
     "nuxt": "^3.13.0",

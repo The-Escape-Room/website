@@ -27,9 +27,8 @@
               :elevation="isHovering ? '24' : '2'">
             <v-img :src="room.images[0]" class="align-end" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
               <v-card-title class="text-white" v-text="room.name"></v-card-title>
-              <v-card-text v-text="room.description" class="text-secondary-500 "></v-card-text>
               <v-card-actions>
-                <v-btn variant="outlined" color="secondary">Check Out Room</v-btn>
+                <v-btn variant="outlined" color="secondary" :to="`/rooms/${room.name}`">Check Out Room</v-btn>
               </v-card-actions>
             </v-img>
           </v-card>

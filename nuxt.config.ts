@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -21,5 +21,5 @@ export default defineNuxtConfig({
   },
   vuetify: {
     vuetifyOptions: './vuetify.config.ts',
-  }
+  },
 });
